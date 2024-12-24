@@ -341,7 +341,7 @@ input::placeholder {
 
 }
 
-@media(max-width: 350px) {
+@media(max-width: 534px) {
     .card {
         max-width: 300px;
     }
