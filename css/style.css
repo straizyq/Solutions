@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: linear-gradient(163.89deg, #020419 32.68%, #2D29D2 260.74%);
+    color: white;
+    font-family: "Roboto";
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+}
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.principes {
+    margin-top: 30px;
+    margin-bottom: 214px;
+}
+
+.principes_cards {
+    display: flex;
+    gap: 156px;
+    flex-wrap: wrap;
+}
+
+.card_title {
+    display: flex;
+    align-items: center;
+}
+
+.card_title_text {
+    font-weight: 500;
+    font-size: 29px;
+    margin-left: 27px;
+
+}
+
+.card {
+    width: 414px;
+    margin-bottom: 76px;
+}
+
+.card_under_line {
+    border-bottom: 2px solid #2D29D2;
+    width: 100%;
+    display: block;
+    margin: 24px 0;
+}
+
+.principes_title {
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 78px;
+}
+
+.services {
+    margin-bottom: 214px;
+}
+
+.services_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 109px;
+    flex-wrap: wrap;
+}
+
+.services_card {
+    display: flex;
+    gap: 30px;
+}
+
+.services_card_content_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.services_card_title {
+    width: 382px;
+    font-weight: 500;
+    font-size: 29px;
+    margin-bottom: 44px;
+}
+
+.services_card_text {
+    width: 362px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.8;
+
+}
+
+.services_text {
+    margin-bottom: 147px;
+    width: 735px;
+}
+
+.services_title {
+    margin-bottom: 64px;
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.services_card_number {
+    font-weight: 500;
+    font-size: 100px;
+    color: #961D77;
+}
+
+.second_line {
+    margin-right: 0;
+
+}
+
+.partners_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.partners_title {
+    font-weight: 600;
+    font-size: 65px;
+    margin-bottom: 87px;
+}
+
+
+.partners {
+    margin-bottom: 215px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_section_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+}
+
+.form_input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.form_title {
+    margin-bottom: 75px;
+}
+
+.form_btn {
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    padding: 21px 100px;
+    font-weight: 500;
+    font-size: 29px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.partners_btn {
+    display: none;
+}
+
+.form_btn:hover {
+    opacity: 0.6;
+}
+
+.form_contacts_title {
+    margin-bottom: 51px;
+}
+
+.form_section_title {
+    margin-bottom: 174px;
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.form_contacts {
+    background-color: #fff;
+    color: black;
+    padding: 45px 60px;
+}
+
+.form_contacts_content {
+    display: flex;
+    gap: 104px;
+}
+
+.form_contacts_content_left p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.form_contacts_content_left a {
+    display: inline-block;
+    margin: 20px 0;
+    color: blue;
+}
+
+.form_contacts_content_right p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.form_contacts_content_right span {
+    color: #2D29D2;
+    font-weight: 600;
+}
+
+.form_section {
+    margin-bottom: 62px;
+}
+
+@media(max-width: 1199px) {
+    .services_card {
+        margin-bottom: 30px;
+    }
+
+    .right {
+        justify-content: end;
+    }
+
+    .form_section_content {
+        flex-direction: column;
+    }
+
+    .form_btn {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 990px) {
+    .principes_cards {
+        gap: 100px;
+    }
+}
+
+@media(max-width: 767px) {
+    .partners_btn {
+        display: block;
+        margin-top: 50px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        border: none;
+        padding: 21px 0;
+        width: 300px;
+        font-weight: 500;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .partners .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hide {
+        display: none;
+    }
+}
+
+@media(max-width: 570px) {
+    .container {
+        padding: 0 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services {
+        margin-bottom: 100px;
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+    .principes_title {
+        font-size: 40px;
+    }
+
+    .services_title {
+        font-size: 40px;
+    }
+
+    .services_card_title {
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .services_card_text {
+        font-size: 12px;
+        width: 250px;
+    }
+
+    .form_contacts {
+        padding: 45px 30px;
+    }
+    .services_text {
+        width: 100%;
+    }
+
+}
